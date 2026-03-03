@@ -1,8 +1,8 @@
 import { Webhook } from 'svix';
 import { Response, Request } from 'express';
-import { CLERK_WEBHOOK_SIGNING_SECRET } from '../common/privateKeys.js';
-import UserModel from '../data/user/UserModel.js';
-import { extractClerkUserName, ClerkUserMetadata } from '../utils/clerk.utils.js';
+import { CLERK_WEBHOOK_SIGNING_SECRET } from '@common/privateKeys.js';
+import UserModel from '@models/user/UserModel.js';
+import { extractClerkUserName, ClerkUserMetadata } from '@utils/clerk.utils.js';
 
 interface ClerkUserEventData {
   id: string;

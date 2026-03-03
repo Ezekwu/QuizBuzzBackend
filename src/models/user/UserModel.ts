@@ -1,7 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 import User from '../../types/User.js';
 
-
 const userSchema = new Schema<User>({
   clerkUserId: {
     type: String,
